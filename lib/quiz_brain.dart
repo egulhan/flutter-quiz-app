@@ -39,4 +39,11 @@ class QuizBrain {
 
     return this.currentQuestion;
   }
+
+  restartQuiz() {
+    this.currentQuestionIndex = 0;
+    this.correctAnswerCounter = 0;
+    this.incorrectAnswerCounter = 0;
+    this.currentQuestion = questions.first;
+  }
 }
